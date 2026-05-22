@@ -17,6 +17,7 @@ This library fills that gap.
 A structured collection of governance patterns — each one addressing a specific, recurring challenge in building safe, auditable, compliant AI agent systems on top of SAP S/4HANA.
 
 Every pattern includes:
+
 - **The problem** it solves
 - **The SAP context** (authorization objects, transaction codes, control implications)
 - **The governance design** (what to build and why)
@@ -30,9 +31,9 @@ Every pattern includes:
 | ID | Pattern | Status |
 |----|---------|--------|
 | [P001](./patterns/P001-permission-scoping/README.md) | Agent Permission Scoping Against SAP Authorization Objects | ✅ Available |
-| [P002](./patterns/P002-approval-gates/README.md) | Human Approval Gates for High-Risk SAP Transaction Codes | 🔜 Coming |
-| [P003](./patterns/P003-audit-logging/README.md) | Audit Logging for Agentic Workflows in SAP | 🔜 Coming |
-| [P004](./patterns/P004-failure-handling/README.md) | Agent Failure Handling During Financial Period-End Close | 🔜 Coming |
+| [P002](./patterns/P002-approval-gates/README.md) | Human Approval Gates for High-Risk SAP Transaction Codes | ✅ Available |
+| [P003](./patterns/P003-audit-logging/README.md) | Audit Logging for Agentic Workflows in SAP | ✅ Available |
+| [P004](./patterns/P004-failure-handling/README.md) | Agent Failure Handling During Financial Period-End Close | ✅ Available |
 
 ---
 
@@ -65,7 +66,7 @@ This is an open library. Contributions, corrections, and new patterns are welcom
 ## Author
 
 **Ismael** — Senior Intelligent Automation & AI Engineer  
-8+ years enterprise AI and automation experience | SAP S/4HANA | Microsoft Azure | Multi-agent systems
+7+ years enterprise AI and automation experience | SAP S/4HANA | Microsoft Azure | Multi-agent systems
 
 ---
 
