@@ -30,8 +30,8 @@ Every pattern includes:
 | ID | Pattern | Status |
 |----|---------|--------|
 | [P001](./patterns/P001-permission-scoping/README.md) | Agent Permission Scoping Against SAP Authorization Objects | ✅ Available |
-| [P002](./patterns/P002-approval-gates/README.md) | Human Approval Gates for High-Risk SAP Transaction Codes | ✅ Available |
-| [P003](./patterns/P003-audit-logging/README.md) | Audit Logging for Agentic Workflows in SAP | ✅ Available |
+| [P002](./patterns/P002-approval-gates/README.md) | Human Approval Gates for High-Risk SAP Transaction Codes | 🔜 Coming |
+| [P003](./patterns/P003-audit-logging/README.md) | Audit Logging for Agentic Workflows in SAP | 🔜 Coming |
 | [P004](./patterns/P004-failure-handling/README.md) | Agent Failure Handling During Financial Period-End Close | 🔜 Coming |
 
 ---
