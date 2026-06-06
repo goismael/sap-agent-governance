@@ -2,6 +2,8 @@
 
 **Governance patterns for AI agents integrated with SAP S/4HANA — built by practitioners, for practitioners.**
 
+**[Pattern Library Site](https://goismael.github.io/sap-agent-governance)** · **[SAP Audit Agent](https://goismael.github.io/sap-audit-agent)** · **[Live Demo](https://huggingface.co/spaces/LuckyIsmael/sap-audit-agent-demo)**
+
 ---
 
 ## The Problem
@@ -18,22 +20,23 @@ A structured collection of governance patterns — each one addressing a specifi
 
 Every pattern includes:
 
-- **The problem** it solves
-- **The SAP context** (authorization objects, transaction codes, control implications)
-- **The governance design** (what to build and why)
-- **Reference implementation** (pseudocode / Python / ABAP snippets)
-- **Audit considerations** (what auditors will ask, what you need to prove)
+- The problem it solves
+- The SAP context (authorization objects, transaction codes, control implications)
+- The governance design (what to build and why)
+- Reference implementation (pseudocode / Python / ABAP snippets)
+- Audit considerations (what auditors will ask, what you need to prove)
 
 ---
 
 ## Patterns
 
-| ID | Pattern | Status |
-|----|---------|--------|
-| [P001](./patterns/P001-permission-scoping/README.md) | Agent Permission Scoping Against SAP Authorization Objects | ✅ Available |
-| [P002](./patterns/P002-approval-gates/README.md) | Human Approval Gates for High-Risk SAP Transaction Codes | ✅ Available |
-| [P003](./patterns/P003-audit-logging/README.md) | Audit Logging for Agentic Workflows in SAP | ✅ Available |
-| [P004](./patterns/P004-failure-handling/README.md) | Agent Failure Handling During Financial Period-End Close | ✅ Available |
+| ID | Pattern | Risk Level | Status |
+|---|---|---|---|
+| P001 | Agent Permission Scoping Against SAP Authorization Objects | Critical | ✅ Available |
+| P002 | Human Approval Gates for High-Risk SAP Transaction Codes | Critical | ✅ Available |
+| P003 | Audit Logging for Agentic Workflows in SAP | High | ✅ Available |
+| P004 | Agent Failure Handling During Financial Period-End Close | High | ✅ Available |
+| P005 | Deterministic Replay of Agent Decisions Against Close-Time Policy | High | ✅ Available |
 
 ---
 
@@ -57,15 +60,21 @@ This library is built on five governance principles derived from production expe
 
 ---
 
+## Built On This Library
+
+The **[SAP Audit Preparation Agent](https://github.com/goismael/sap-audit-agent)** is a working proof of concept built directly on P001–P004. It collects SAP financial events, correlates them with agent logs and approval records, and generates plain-language SOX audit narratives — scored A through D. Try the [live demo](https://huggingface.co/spaces/LuckyIsmael/sap-audit-agent-demo).
+
+---
+
 ## Contributing
 
-This is an open library. Contributions, corrections, and new patterns are welcome. See [CONTRIBUTING.md](./CONTRIBUTING.md).
+This is an open library. Contributions, corrections, and new patterns are welcome. See CONTRIBUTING.md.
 
 ---
 
 ## Author
 
-**Ismael** — Senior Intelligent Automation & AI Engineer  
+**Ismael** — Senior Intelligent Automation & AI Engineer
 7+ years enterprise AI and automation experience | SAP S/4HANA | Microsoft Azure | Multi-agent systems
 
 ---

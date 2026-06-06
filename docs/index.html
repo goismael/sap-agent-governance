@@ -552,7 +552,7 @@
 
 <div class="stats">
   <div class="stat">
-    <span class="stat-number">4</span>
+    <span class="stat-number">5</span>
     <span class="stat-label">Governance patterns<br>across the agent lifecycle</span>
   </div>
   <div class="stat">
@@ -709,6 +709,32 @@
         <span class="obj-tag">Checkpoint Design</span>
       </div>
       <a class="pattern-link" href="https://github.com/goismael/sap-agent-governance/tree/main/patterns/P004-failure-handling" target="_blank">Read full pattern → GitHub</a>
+    </div>
+  </div>
+
+  <!-- P005 -->
+  <div class="pattern-card">
+    <div class="pattern-header" onclick="togglePattern(this)">
+      <span class="pattern-id">P005</span>
+      <span class="pattern-title">Deterministic Replay of Agent Decisions Against Close-Time Policy</span>
+      <div class="pattern-meta">
+        <span class="badge badge-high">High</span>
+        <span class="badge badge-available">Available</span>
+      </div>
+      <span class="chevron">▾</span>
+    </div>
+    <div class="pattern-body">
+      <p class="pattern-desc">
+        Session-level logging tells you what happened. Decision-level logging tells you why. But neither answers the auditor's hardest question: was the agent's decision correct under the policy that was live at close time — not today's policy? This pattern defines policy version registries, close-cycle context snapshots, decision trace recording, and a deterministic replay engine that re-evaluates every agent decision against frozen close-time rules without LLM calls. Detects policy drift, model drift, and context drift between close and audit.
+      </p>
+      <div class="pattern-objects">
+        <span class="obj-tag">Policy Version Registry</span>
+        <span class="obj-tag">Context Snapshot</span>
+        <span class="obj-tag">Decision Trace</span>
+        <span class="obj-tag">Deterministic Replay</span>
+        <span class="obj-tag">Policy Drift Detection</span>
+      </div>
+      <a class="pattern-link" href="https://github.com/goismael/sap-agent-governance/tree/main/patterns/P005-deterministic-replay" target="_blank">Read full pattern → GitHub</a>
     </div>
   </div>
 </section>
